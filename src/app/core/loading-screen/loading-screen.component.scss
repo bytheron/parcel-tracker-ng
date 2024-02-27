@@ -1,0 +1,22 @@
+.page-loader {
+  width: 110px;
+  height: 110px;
+  display: block;
+  position: relative;
+  margin: 0 auto 25px auto;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    &.logo-img {
+      position: absolute;
+      width: 80px;
+      left: 7px;
+      top: 7px;
+    }
+  }
+
+  &_wording {
+    text-align: center;
+  }
+}

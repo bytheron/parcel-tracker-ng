@@ -1,0 +1,30 @@
+@if (!trackingCodeValueSet) {
+  <div class="container form_input_full">
+    <div class="logo-container">
+      <img src="./../assets/img/logo.svg" alt="Pargo Logo Image" class="logo-img">
+    </div>
+    <div class="header txt_center">
+      <h1 aria-label="Track your parcel">Track your parcel</h1>
+      <span class="taglines">
+        <p aria-label="Track your order by entering your waybill number">Track your order by entering your waybill number</p>
+      </span>
+    </div>
+
+    <div class="track-container">
+      <div class="track-container_form">
+        @if (inputError) {
+          <p class="error-text">{{inputError}}</p>
+          }
+        <mat-form-field appearance="fill">
+          <input type="search" matInput placeholder="Enter Tracking Code" [(ngModel)]="trackingCode" #ctrl="ngModel"
+            [ngModelOptions]="formOptions" required>
+          <button matSuffix mat-icon-button aria-label="Tracking Code Search" (click)="searchTrackingCode()">
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+} @else {
+  <p>Build tracking page</p>
+}

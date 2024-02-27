@@ -1,0 +1,23 @@
+.container {
+  margin: 60px 0;
+
+  &.form_input_full {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.track-container {
+  margin-top: 60px;
+  &_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    * {
+      border: 0 !important;
+    }
+  }
+
+}
