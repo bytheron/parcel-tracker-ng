@@ -8,6 +8,9 @@ body {
 }
 
 body {
+  font-size: 14px;
+  color: #898989;
+  line-height: initial;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -26,4 +29,99 @@ body {
     width: 100px;
     height: auto;
   }
+}
+
+.container {
+  &.txt_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_row {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+}
+
+.color_grey {
+  background: #f0f0f0
+}
+
+.padding_lrg {
+  padding: 30px !important;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_item {
+    flex: 1;
+  }
+
+  &.col {
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+
+    .row_item {
+      display: flex;
+      gap: 20px;
+
+      &_text {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.space_small,
+.space_default,
+.space_medium,
+.space_large {
+  display: block;
+  width: 100%
+}
+
+.space_small {
+  height: 9px
+}
+
+.space_default {
+  height: 15px
+}
+
+.space_medium {
+  height: 30px
+}
+
+.space_large {
+  height: 60px
+}
+
+.txt_right,
+.table_results td.txt_right {
+  text-align: right
+}
+
+.txt_left {
+  text-align: left
+}
+
+.txt_center {
+  text-align: center
+}
+
+.txt-medium {
+  font-size: 18px
+}
+
+.txt-large {
+  font-size: 24px
+}
+
+.txt-capi {
+  text-transform: capitalize
 }

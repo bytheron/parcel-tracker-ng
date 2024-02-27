@@ -1,30 +1,136 @@
 @if (!trackingCodeValueSet) {
-  <div class="container form_input_full">
-    <div class="logo-container">
-      <img src="./../assets/img/logo.svg" alt="Pargo Logo Image" class="logo-img">
-    </div>
-    <div class="header txt_center">
-      <h1 aria-label="Track your parcel">Track your parcel</h1>
-      <span class="taglines">
-        <p aria-label="Track your order by entering your waybill number">Track your order by entering your waybill number</p>
-      </span>
-    </div>
+<div class="container form_input_full">
+  <div class="logo-container">
+    <img src="./../assets/img/logo.svg" alt="Pargo Logo Image" class="logo-img">
+  </div>
+  <div class="header txt_center">
+    <h1 aria-label="Track your parcel">Track your parcel</h1>
+    <span class="taglines">
+      <p aria-label="Track your order by entering your waybill number">Track your order by entering your waybill number
+      </p>
+    </span>
+  </div>
 
-    <div class="track-container">
-      <div class="track-container_form">
-        @if (inputError) {
-          <p class="error-text">{{inputError}}</p>
-          }
-        <mat-form-field appearance="fill">
-          <input type="search" matInput placeholder="Enter Tracking Code" [(ngModel)]="trackingCode" #ctrl="ngModel"
-            [ngModelOptions]="formOptions" required>
-          <button matSuffix mat-icon-button aria-label="Tracking Code Search" (click)="searchTrackingCode()">
-            <mat-icon>search</mat-icon>
-          </button>
-        </mat-form-field>
-      </div>
+  <div class="track-container">
+    <div class="track-container_form">
+      @if (inputError) {
+      <p class="error-text">{{inputError}}</p>
+      }
+      <mat-form-field appearance="fill">
+        <input type="search" matInput placeholder="Enter Tracking Code" [(ngModel)]="trackingCode" #ctrl="ngModel"
+          [ngModelOptions]="formOptions" required>
+        <button matSuffix mat-icon-button aria-label="Tracking Code Search" (click)="searchTrackingCode()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
     </div>
   </div>
+
+  <section class="color_grey padding_lrg">
+    <div class="container txt_center">
+      <div class="space_medium"></div>
+      <h2>What is Track & Trace?</h2>
+      <p>Check where your parcel is at all times. With Track & Trace you can monitor your parcel's activity 24/7.</p>
+      <div class="space_medium"></div>
+      <div class="row">
+        <div class="row_item">
+          <img src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/TrackParcel.svg"
+            style="width: 120px; height: 120px;"><br>
+          <h2 class="padding_tb">Tracking Number</h2>
+          Find the waybill number on your parcel - this is your tracking number.
+        </div>
+        <div class="row_item">
+          <img src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/TrackingPin.svg"
+            style="width: 120px; height: 120px;"><br>
+          <h2 class="padding_tb">Enter Tracking No.</h2>
+          Use your tracking number in the panel at the top of this page.
+        </div>
+        <div class="row_item">
+          <img src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/TrackLocation.svg"
+            style="width: 120px; height: 120px;"><br>
+          <h2 class="padding_tb">Location</h2>
+          Check where your parcel is right now.
+        </div>
+      </div>
+      <div class="space_large"></div>
+    </div>
+  </section>
+
+  <section class="txt_left shadow_inner_top">
+    <div class="container_row">
+      <div class="space_large"></div>
+      <h2 class="txt_center">Pargo parcel tracking</h2>
+      <div class="space_large"></div>
+      <div class="row col">
+        <div class="row">
+          <div class="row_item">
+            <img style="height: 85px;"
+              src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/PargoDeliversParcels.svg">
+            <div>
+              <strong>Your parcel’s journey</strong>
+              <p>The Pargo tracking functionality is detailed, real-time and simple. It has been
+                developed for convenience to enable you to watch every part of your parcel’s
+                journey. From the second your order leaves the warehouse or the drop-off point
+                to the minute it arrives in your neighbourhood, every move of your parcel is
+                recorded.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="space_medium"></div>
+
+        <div class="row">
+          <div class="row_item">
+            <span class="large_icon">
+              <img style="height: 85px;"
+                src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/InYourOwnTime.svg">
+            </span>
+
+            <div class="row_item_text">
+              <strong>24/7 Tracking</strong>
+              <p>Pargo’s tracking functionality can be accessed in real time, 24/7 on mobile or
+                desktop. Your waybill number is your tracking number. It can be found in your
+                email and sms notifications, which you will start receiving after the order has
+                been finalised.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space_medium"></div>
+
+        <div class="row">
+          <div class="row_item">
+            <span class="large_icon">
+              <img style="height: 85px;"
+                src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/CustomerNotified.svg">
+            </span>
+
+            <div class="row_item_text">
+              <strong>Notifications</strong>
+              <p>Throughout your parcels journey you will get several reminders via email and mobile.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space_medium"></div>
+
+        <div class="row_item">
+          <img style="height: 85px;"
+            src="https://pargo.co.za/wp-content/themes/pargo/assets/img/icons/svg/SAASorPargoIntegration.svg">
+          <br>
+          <div>
+            <strong>Pargo functionality</strong>
+            <p>Pargo’s tracking functionality was developed with the customer in mind. It is
+              reliable and intuitive. Should there be any questions with regards to tracking
+              your parcel our customer service team is there to assist.</p>
+          </div>
+        </div>
+
+        <div class="space_large"></div>
+      </div>
+    </div>
+  </section>
+</div>
 } @else {
-  <app-tracking-map></app-tracking-map>
+<app-tracking-map></app-tracking-map>
 }
