@@ -3,6 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { TrackingMapComponent } from './components/tracking-map/tracking-map.component';
 
 @Component({
   selector: 'app-tracking',
@@ -13,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
+    TrackingMapComponent
   ],
   templateUrl: './tracking.component.html',
   styleUrl: './tracking.component.scss'
